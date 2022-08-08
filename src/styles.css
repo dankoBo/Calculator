@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #000000;
 }
 
 .calculator {
@@ -33,20 +34,33 @@
     border: none;
     cursor: pointer;
     font-size: 25px;
+    background-color: #FFFFFF;
 }
 
 .calculator__btn:hover {
     opacity: 0.6;
 }
 
-.calculator__btn_operator {
+.calculator__btn-operator {
     background-color: coral;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
 }
 
-.calculator__btn_reset {
+.calculator__btn-clear {
     background-color: brown;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
 }
 
-.calculator__btn_equal {
+.calculator__btn-equal {
     background-color: darkgreen;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
 }
