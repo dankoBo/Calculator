@@ -5,16 +5,10 @@ let button = document.querySelectorAll('.calculator__btn');
 
 
 
-button.forEach(item => {
-    item.addEventListener('click', function(e) {
 
-        let number = e.target.innerText;
-        result.value += number;
 
         if(number === 'C') {
             result.value = '';
         } 
-    })
-
-    
+    }) 
 })
