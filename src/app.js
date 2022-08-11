@@ -22,6 +22,7 @@ buttonNumbers.forEach(number => {
         if (operation === '' && firstInteger != false) {
             firstInteger += buttonNum
             resultScreen.value = firstInteger
+            return
         }
 
         if (firstInteger !== false && secondInteger === false && operation != '') {
@@ -32,6 +33,7 @@ buttonNumbers.forEach(number => {
         if (firstInteger != false && secondInteger != false && equalButton.clicked != 'true') {
             secondInteger += buttonNum
             resultScreen.value = secondInteger
+            return
         }
         
     })
@@ -41,7 +43,7 @@ equalButton.addEventListener('click', () => {
     if  (firstInteger !== false && secondInteger !== false) {
 
         if (operation === '+') {
-            resultScreen.value = +firstInteger + +secondInteger
+            resultScreen.value = parseInt(firstInteger, 10) + parseInt(secondInteger, 10)
         } else if (operation === '-') {
             resultScreen.value = firstInteger - secondInteger
         } else if (operation === 'x') {
