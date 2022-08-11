@@ -20,7 +20,6 @@ buttonNumbers.forEach(number => {
         }
 
         if (operation === '' && firstInteger != false) {
-            console.log('debug');
             firstInteger += buttonNum
             resultScreen.value = firstInteger
         }
@@ -39,7 +38,6 @@ buttonNumbers.forEach(number => {
 })
 
 equalButton.addEventListener('click', () => {
-    equalButton.dataset.clicked = 'true'
     if  (firstInteger !== false && secondInteger !== false) {
 
         if (operation === '+') {
